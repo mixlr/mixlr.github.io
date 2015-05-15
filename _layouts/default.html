@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content container-fluid">
+      <div class="wrapper row">
+        <div class="col-md-3" id="sidebar">
+          <img src="/images/mixlr.png"/>
+        </div>
+        <div class="col-md-9" id="main">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    <script src="/javascripts/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

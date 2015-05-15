@@ -1,0 +1,141 @@
+---
+---
+
+html, body {
+  height: 100%;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+// general style overrides
+
+a, a:active, a:visited {
+  color:#f2555b;
+  padding-bottom:1px;
+
+  &:hover {
+    text-decoration:none;
+    color:#ed1c24;
+    padding-bottom:0px;
+    border-bottom:1px dotted #f2555b;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:"DIN Next W02 Medium", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  margin-top:10px;
+
+  > a {
+    display:inline;
+  }
+}
+
+// site header
+
+header#header {
+  height:50px;
+  background:#000000;
+
+  h1 {
+    background: url("http://mixlr-desk-assets.s3.amazonaws.com/img/mixlr_logo.png") no-repeat 19px 15px;
+    background-position: 22px 18px;
+    height: 50px;
+    width: 85px;
+    padding:0 5px 0 20px;
+    text-indent:-9999px;
+    margin:0px;
+    float:left;
+
+    > a {
+      width:90px;
+      display:block;
+
+      &:hover {
+        border-bottom:none;
+      }
+    }
+
+    &:hover {
+      background-color:#333;
+    }
+  }
+
+  h2 {
+    float:left;
+    color:#fff;
+    font-family:"Avenir LT W02 55 Roman", "Helvetica Neue", Helvetica, arial, serif;
+    font-size:17px;
+    height: 50px;
+    margin: 0px;
+    padding: 17px 15px 0 10px;
+
+    a, a:active, a:hover, a:visited {
+      color:#fff;
+      border-bottom:none;
+    }
+
+    &:hover {
+      background-color:#333;
+    }
+  }
+}
+
+// footer
+
+footer.site-footer {
+  > .row {
+    max-width:none;
+  }
+
+  ul.contact-list li:last-child {
+    padding-top:10px;
+  }
+}
+
+// columns
+
+.container-fluid {
+  > .row {
+    max-width:none;
+
+    > #sidebar {
+      display:none;
+
+      @media only screen and (min-width: 767px) {
+        display:block;
+      }
+    }
+
+    > #main {
+
+    }
+
+  }
+
+}
+
+// posts (general)
+
+.post {
+  .post-header {
+    margin-bottom:15px;
+
+    h2.post-title {
+      font-size:35px;
+    }
+  }
+
+  article.post-content {
+    font-size:16px;
+  }
+}
+
+// posts (homepage list)
+
+ul.post-list {
+  > li {
+    > h2 {
+      margin:5px 0 0 0;
+    }
+  }
+}
+
