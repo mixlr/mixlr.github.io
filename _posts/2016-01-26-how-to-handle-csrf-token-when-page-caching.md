@@ -4,6 +4,7 @@ title:  "How to make CSRF protection work with page caching"
 date:   2016-01-25 14:00:00
 author: Rob
 categories: development
+excerpt: How can you deliver a high-traffic web application, but still protect the safety of your users? We explore some possible ways to combine protection from CSRF attacks, and page caching.
 tags: csrf, page caching
 ---
 
