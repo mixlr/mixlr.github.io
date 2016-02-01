@@ -2,6 +2,7 @@
 layout: page
 title:  "Work with us building Mixlr"
 date:   2015-02-01 12:00:00
+excerpt: Join the Mixlr team and work with us to build the world's biggest audio broadcasting service. Find out more.
 author: Rob
 categories: jobs
 ---
