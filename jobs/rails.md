@@ -1,26 +1,24 @@
 ---
 layout: page
-title:  "Web Developer (Ruby/Rails)"
+title:  "Backend/Full-stack Developer (Ruby/Rails)"
 date:   2015-02-01 12:00:00
 author: Rob
-excerpt: Join the Mixlr team as a Web Developer (Ruby/Rails) and work with us to build the world's biggest audio broadcasting platform.
+excerpt: Join the Mixlr team as a Ruby developer and work with us to build the world's biggest audio broadcasting platform.
 categories: jobs
 redirect_from:
   - /jobs/webdev.html
 comments: false
 ---
 
-We would like to meet Ruby developers who are passionate, proficient - and hungry to learn new skills.
+We would like to meet backend and full-stack developers who are all about implementing rock-solid systems, and who want to apply their skills in the exciting and challenging field of live broadcasting.
 
-You will be working primarily on our hugely popular and high-traffic Ruby on Rails web app. With a small, tight-knit team and a large and passionate user base, your work will have an instant impact from your very first day.
+Mixlr powers tens of thousands of broadcasts every month, attracting millions of listeners and an engaged and passionate community of content creators. You will have the opportunity to work both on our Ruby on Rails apps, and also our extensive and battle-tested backend infrastructure.
 
-You'll also be collaborating directly with our product design team, and founders, on a day-to-day basis, and thus have the opportunity to directly influence the future of our product and company.
+We practice test-driven development wherever possible, and place a high importance on building ourselves the best internal monitoring tools we can. You'll be collaborating daily with our product design team, and founders, offering the opportunity to directly influence not just the codebase but the future of our product and company.
 
-We are proud to be a friendly and positive team, and value learning and sharing our knowledge highly. With regular Friday beers featuring technical discussion and presentations, pair-programming opportunities and an extensive and battle-proven technical infrastructure, you'll learn (and contribute) a lot.
+We are proud to be a friendly and positive team. With regular Friday beers featuring technical discussion and presentations, pair-programming opportunities, you'll not just contribute but also learn a lot.
 
 We use agile methodologies to guide our development process, and we’ll aim for you to deploy to our production site on your very first day.
-
-_We are hiring for frontend, backend and full-stack web developer roles._
 
 Some of the technologies we use every day:
 
@@ -30,4 +28,6 @@ Ruby on Rails, Rspec, PostgreSQL, Redis, Resque, Git, Slack, Stripe, Haml, SCSS,
 
 We also offer a competitive salary and equity package. [Learn more about Mixlr and our working environment](/jobs).
 
-**Interested? [Drop us a line](mailto:jobs@mixlr.com) and say hi.**
+_Interested?_ We'd love to hear from you. [Drop us a line](mailto:jobs@mixlr.com).
+
+Back to [Mixlr jobs homepage](/jobs).
