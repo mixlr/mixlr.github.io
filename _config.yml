@@ -10,3 +10,5 @@ github_username:  mixlr
 
 # Build settings
 markdown: kramdown
+gems:
+  - jekyll-redirect-from
