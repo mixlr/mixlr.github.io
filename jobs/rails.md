@@ -5,6 +5,8 @@ date:   2015-02-01 12:00:00
 author: Rob
 excerpt: Join the Mixlr team as a Web Developer (Ruby/Rails) and work with us to build the world's biggest audio broadcasting platform.
 categories: jobs
+redirect_from:
+  - /jobs/webdev.html
 comments: false
 ---
 
