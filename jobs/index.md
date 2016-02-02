@@ -2,33 +2,35 @@
 layout: page
 title:  "Work with us building Mixlr"
 date:   2015-02-01 12:00:00
-excerpt: Join the Mixlr team and work with us to build the world's biggest audio broadcasting service. Find out more.
+excerpt: Join the Mixlr team and work with us to build the world's leading audio broadcasting service. Find out more.
 author: Rob
 categories: jobs
 ---
 
-[Mixlr](http://mixlr.com) is the biggest platform for live music and audio content, now with over 4 million registered users and 40,000 active broadcasters every month.
+[Mixlr](http://mixlr.com) is an audio broadcasting company, providing rock-solid and professional live audio services to radio stations, bands, artists - and tens of thousands of other content creators, each and every month.
 
-With our desktop, tablet and mobile apps our community can broadcast live to the world with one touch of a button. Once live, it’s easy for friends and followers to chat, heart and share - becoming a part of the live event themselves.
+From designing and building powerful broadcast apps, to seamlessly distributing live sounds to millions of listeners, our team delivers indispensable solutions that are trusted and relied upon worldwide.
 
-Founded in 2010 by Greg Lloyd and Rob Watson, we are an established startup and growing fast. With a small, tight-knit team you will have the opportunity to make a great impact not only on the code but also on our product, company and future.
+We are passionate about beautiful design, compelling products and exciting technology. More than anything, we are committed to our users.
 
-Part of our product lineup:
+With thousands of paying customers, we are growing fast. And our large and active community provides instant feedback on the changes we make - something in which we revel. Working on Mixlr is fast, fun, exhilarating and unrelenting.
 
-* [Web application](http://mixlr.com) _(Ruby on Rails, Ruby, RSpec, Resque, JavaScript, Backbone)_
-* Desktop app for Windows and Mac _(C++, Qt, QML)_
-* Native [Android](https://play.google.com/store/apps/details?id=com.mixlr.android&hl=en) and [iOS](https://itunes.apple.com/us/app/mixlr-social-live-audio/id583705714?mt=8) apps _(Objective C, Java, Android Studio, Gradle)_
-* Embeddable player _(HTML5, JavaScript)_
-* Real-time push messaging service _(NodeJS, Redis, WebSockets)_
-* Streaming backend infrastructure _(NodeJS, JavaScript, Java, Icecast)_
+Right now, we’re hiring for a number of roles - technical, product, sales and community support. We are a small, friendly and positive team which delights in exceeding expectations and learning, and having fun, together. Together we can build something great.
 
-On top of that our stack also features: PostgreSQL, Redis, Nginx, Lua, Monit, Puppet and AWS.
+---
 
-Some tools we use in our daily workflow: Slack, Git, GitHub, Pivotal Tracker, Trello, Pingdom, BrowserStack.
+#### We would like to meet...
 
-Still not convinced? We also offer:
+* [Frontend Developer](/jobs/webdev.html) (HTML5/JavaScript/Ruby/Rails)
+* [Backend/Full-stack Developer](/jobs/webdev.html) (Ruby/Rails)
+* Junior Developer
+* Community Manager
 
-* A small, tight-knit team and a fun (but focused) working environment
+---
+
+#### Working at Mixlr offers...
+
+* A small, friendly team and a fun (but focused) working environment
 * A [fantastic office](http://eatworkart.com/netil-house/), plus [spectacular rooftop terrace and bar](https://www.instagram.com/p/8FkTZSo9M0/?taken-by=netil360) - perfectly situated in the heart of East London
 * Friday beers with technical talks to share our knowledge
 * Flexible working hours
@@ -37,10 +39,6 @@ Still not convinced? We also offer:
 * The opportunity to have an actual impact with the work you are doing
 * Office stereos with rotating DJs in the team
 * In-office sound effects triggered from Slack
-
-Our current listed vacancies:
-
-* [Web developer (Ruby/Rails)](/jobs/webdev.html)
 
 **Drop us a line at [jobs@mixlr.com](mailto:jobs@mixlr.com)**
 
