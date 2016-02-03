@@ -4,7 +4,7 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <h2 class="post-title">{{ page.title }} | Tech blog | Mixlr</h2>
+    <h2 class="post-title">{{ page.title }}</h2>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
@@ -15,7 +15,7 @@ layout: default
 
     {% include share.html %}
 
-    {{ if post.comments }}
+    {% if post.comments && jekyll.environment == 'production' %}
       <div id="disqus_thread"></div>
       <script>
           /**
@@ -38,7 +38,7 @@ layout: default
           })();
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      {{ endif }}
+      {% endif %}
   </article>
 
 </div>
