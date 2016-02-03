@@ -15,7 +15,7 @@ layout: default
 
     {% include share.html %}
 
-    {% if post.comments and jekyll.environment == 'production' %}
+    {% if jekyll.environment == 'production' %}
       <div id="disqus_thread"></div>
       <script>
           /**
