@@ -5,7 +5,7 @@ date:   2016-02-02 12:00
 author: Rob
 image: mixer.png
 categories: development
-excerpt: How do we build Mixlr? In this post we talk about ten incredible open source technologies that make Mixlr possible.
+excerpt: How do we build Mixlr? In this post we talk about ten open source technologies that make Mixlr possible.
 comments: false
 tags: backend technology lists
 ---
