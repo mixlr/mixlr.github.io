@@ -3,10 +3,11 @@ layout: post
 title:  "10 open source technologies we use at Mixlr"
 date:   2016-02-02 12:00
 author: Rob
+image: mixer.png
 categories: development
-excerpt: How do we make Mixlr work? Here we talk about ten great open source technologies that help us build the service.
+excerpt: How do we build Mixlr? In this post we talk about ten incredible open source technologies that make Mixlr possible.
 comments: false
-tags: backend, technology, lists
+tags: backend technology lists
 ---
 
 <a name="top"></a>
