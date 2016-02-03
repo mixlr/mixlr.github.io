@@ -9,9 +9,10 @@ comments: false
 tags: backend, technology, lists
 ---
 
-<p class="info_block"><strong>We're hiring!</strong> We're passionate about building exciting, rock-solid systems using the best open source software. If you're a backend developer who feels likewise, come and join our team. <a href="/jobs">Visit the Mixlr jobs homepage</a>.</p>
+<a name="top"></a>
+<p class="info_block"><strong>We're hiring.</strong> If you're a backend developer who is passionate about building rock-solid, high-usage systems using open source technology, you might find Mixlr to be a great team to join. <a href="/jobs">Visit the Mixlr jobs homepage</a>.</p>
 
-We rely on a host of amazing open source technologies to build the Mixlr platform, and thought it was about time we shared our favourite examples, and why they play such a big part in building our service.
+We rely on a host of amazing open source technologies to build the Mixlr platform. This post offers an overview of some of our favourite examples, and why they play such a big part in building our service.
 
 1. [PostgreSQL](#postgresql)
 1. [Redis](#redis)
@@ -36,6 +37,7 @@ Postgres has other advantages too: helpful `EXPLAIN` output, advanced constraint
 
 * [PostgreSQL homepage](http://www.postgresql.org/)
 * [What are the pros and cons of PostgreSQL and MySQL?](https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL)
+* [Back to top](#top)
 
 #### Redis<a name="redis"></a>
 
@@ -47,6 +49,7 @@ The [Redis source code](https://github.com/antirez/redis) is regularly hailed as
 
 * [Redis homepage](http://redis.io/)
 * [Using Redis at Pinterest for billions of relationships](https://blog.pivotal.io/pivotal/case-studies/using-redis-at-pinterest-for-billions-of-relationships)
+* [Back to top](#top)
 
 #### Nginx<a name="nginx"></a>
 
@@ -60,6 +63,7 @@ Let's not forget its integration with the Lua scripting language, discussed more
 
 * [Nginx homepage](https://www.nginx.com/)
 * [Why is Nginx so efficient?](https://www.quora.com/Why-is-nginx-so-efficient)
+* [Back to top](#top)
 
 #### Haproxy<a name="haproxy"></a>
 
@@ -73,6 +77,7 @@ Much like Redis, it's also another great example of a highly efficient, elegant 
 
 * [Haproxy homepage](http://www.haproxy.org/)
 * [Stackoverflow update: 560M page views a month, it's all about performance](http://highscalability.com/blog/2014/7/21/stackoverflow-update-560m-pageviews-a-month-25-servers-and-i.html/)
+* [Back to top](#top)
 
 #### Lua<a name="lua"></a>
 
@@ -87,6 +92,7 @@ We don't go quite that far, but we do make use of Lua to further fine-tune our H
 * [Lua homepage](http://www.lua.org/about.html)
 * [Nginx/Lua module](https://github.com/openresty/lua-nginx-module)
 * [Pushing Nginx to its limits with Lua](https://blog.cloudflare.com/pushing-nginx-to-its-limit-with-lua/)
+* [Back to top](#top)
 
 #### Puppet<a name="puppet"></a>
 
@@ -100,6 +106,7 @@ Puppet is also at the heart of our autoscaling systems, allowing our service to 
 
 * [Puppet homepage](https://puppetlabs.com/)
 * [Configuration management software - which should I choose?](https://www.quora.com/Configuration-Management/Which-should-I-choose-Chef-Puppet-Ansible-SaltStack-Docker-or-something-else)
+* [Back to top](#top)
 
 
 #### Ruby<a name="ruby"></a>
@@ -108,10 +115,13 @@ Hailing from Japan, the popularity of the Ruby programming language has exploded
 
 Ruby deserves being appreciated as a great open source project in its own right, however. The brainchild of Yukihiro Matsumoto - aka Matz - it is slightly idiosyncratic in style, infinitely flexible and - in the right hands - a profoundly powerful tool that's also relatively easy to learn.
 
-Ruby code glues most of the Mixlr infrastructure together, its transparent interoperability with kernel and shell level functionality making it the obvious choice.
+One of Ruby's most distinguishing features is its aptness for creating [domain-specific languages](http://martinfowler.com/books/dsl.html) - small, specialised and efficient interfaces to sub-parts of a particular software system or application. At Mixlr we've used Ruby to build a DSL which defines our internal API, for example.
+
+Ruby code also glues most of the Mixlr backend infrastructure together, its transparent interoperability with kernel and shell level functionality making it a great fit.
 
 * [Ruby homepage](https://www.ruby-lang.org/)
 * [Learn Ruby the hard way](http://learnrubythehardway.org/book/)
+* [Back to top](#top)
 
 #### Ruby on Rails<a name="rails"></a>
 
@@ -123,6 +133,7 @@ And then there's the small matter of an active and highly passionate community, 
 
 * [Ruby on Rails homepage](http://rubyonrails.org/)
 * [Learn Rails at Codecadamy](https://www.codecademy.com/learn/learn-rails)
+* [Back to top](#top)
 
 #### NodeJS<a name="nodejs"></a>
 
@@ -134,6 +145,7 @@ The power and flexibility of NodeJS means it will likely play a big role in the 
 
 * [NodeJS](https://nodejs.org/)
 * [NodeJS in flames at Netflix](http://techblog.netflix.com/2014/11/nodejs-in-flames.html)
+* [Back to top](#top)
 
 
 #### Jenkins<a name="jenkins"></a>
@@ -146,6 +158,7 @@ Watch this space for more information about the impact Jenkins has been having o
 
 * [Jenkins homepage](https://jenkins-ci.org/)
 * [What is Jenkins? When and why is it used?](https://www.quora.com/What-is-Jenkins-When-and-why-is-it-used)
+* [Back to top](#top)
 
 #### Next...?
 

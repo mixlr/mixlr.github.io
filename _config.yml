@@ -4,7 +4,7 @@ email: jobs@mixlr.com
 description: > # this means to ignore newlines until "baseurl:"
   Mixlr is a platform for social live audio, based in London, England. With over 40,000 broadcasters and millions of listeners every month, we'll be sharing some of what we learn about technology, coding and scaling on this blog.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://devblog.mixlr.com" # the base hostname & protocol for your site
+url: "http://tech.mixlr.com" # the base hostname & protocol for your site
 twitter_username: mixlr
 github_username:  mixlr
 

@@ -9,7 +9,11 @@ layout: default
   </header>
 
   <article class="post-content">
+    {% include share.html %}
+
     {{ content }}
+
+    {% include share.html %}
 
     {{ if post.comments }}
       <div id="disqus_thread"></div>
