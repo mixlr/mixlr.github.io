@@ -22,7 +22,7 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 #### We would like to meet...
 
 * [Frontend Developer](/jobs/frontend.html) (HTML5/JavaScript/Ruby/Rails)
-* [Backend/Full-stack Developer](/jobs/rails.html) (Ruby/Rails)
+* [Backend Developer](/jobs/rails.html) (Ruby/Rails/NodeJS)
 * Junior Developer
 * Community Manager
 
