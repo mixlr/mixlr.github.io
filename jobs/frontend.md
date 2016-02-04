@@ -1,33 +1,37 @@
 ---
 layout: page
-title:  "Frontend Developer (Ruby/Rails)"
+title:  "Frontend developer"
 date:   2015-02-01 12:00:00
 author: Rob
-excerpt: Join the Mixlr team as a Frontend developer and work with us to build the world's biggest audio broadcasting platform.
+excerpt: Join the Mixlr team as a frontend developer and work with us to build the world's biggest audio broadcasting platform.
 categories: jobs
-redirect_from:
-  - /jobs/webdev.html
 comments: false
 ---
 
-We would like to meet frontend web developers who are passionate about great design, beautiful user interfaces - and want the opportunity to work on an exciting, high-traffic real-time web application.
+At Mixlr we currently have opportunities to join our team as a frontend developer.
 
-[Mixlr](http://mixlr.com) powers tens of thousands of broadcasts every month, attracting millions of listeners and an engaged and passionate community of content creators. You will be primarily working on our public-facing web applications, building great new features and ensuring our community continues to enjoy a fantastic user experience.
+#### About Mixlr
 
-You'll be collaborating daily with our product design team and founders, offering the opportunity to directly influence not just the codebase but our wider product and business decisions too.
+{% include jobs/about_mixlr.html %}
 
-We are proud to be an open and friendly team. With regular Friday beers featuring technical discussion and presentations, and pair-programming opportunities, you'll not just contribute but also learn a lot.
+#### About the role
 
-We use agile methodologies to guide our development process, and we’ll aim for you to deploy to our production site on your very first day.
+As a frontend developer, your role will be building, testing and enhancing user-facing features for the Mixlr website.
 
-Some of the technologies we use every day:
+We pride ourselves on delivering fantastic visual design and faultless user experience. You’ll be collaborating directly with our product and design teams to build, test and fine-tune new features using Ruby, JavaScript, HTML5 and CSS.
 
-<div class="info_block">
-Ruby on Rails, Rspec, PostgreSQL, Redis, Resque, Git, Slack, Stripe, Haml, SCSS, Mustache, NodeJS, Airbrake, WebSockets, OAuth2, Mailgun, Capistrano, Machinist, and lots more...
-</div>
+You will own your own code throughout the product development process, so your responsibilities will include writing automated tests, and also talking with our users to listen to their concerns and fix problems they encounter.
 
-We also offer a competitive salary and equity package. [Learn more about Mixlr and our working environment](/jobs).
+Mixlr’s large and active user base will regularly provide instant feedback on the changes you make, providing a fast feedback loop which makes working at Mixlr challenging, exhilarating and satisfying.
 
-_Interested?_ We'd love to hear from you. [Drop us a line](mailto:jobs@mixlr.com).
+We offer a friendly and positive team environment. With regular Friday beers featuring technical discussion and presentations, and regular pair-programming opportunities, you'll not just contribute but also learn a lot.
+
+#### We offer...
+
+{% include jobs/dev_benefits.html %}
+
+_Interested?_ [Drop us a line](mailto:jobs@mixlr.com).
+
+![Mixlr Raspberry Pi](/images/beers.png)
 
 Back to [Mixlr jobs homepage](/jobs).
