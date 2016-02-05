@@ -24,7 +24,7 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 * [Frontend Developer](/jobs/frontend.html) (HTML5/JavaScript/Ruby/Rails)
 * [Backend Developer](/jobs/backend.html) (Ruby/Rails/NodeJS)
 * Junior Developer
-* Community Manager
+* [Community Manager](/jobs/community.html)
 
 ---
 

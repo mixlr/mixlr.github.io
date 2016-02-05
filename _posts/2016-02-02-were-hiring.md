@@ -11,7 +11,7 @@ sharing_upper: false
 tags: jobs
 ---
 
-We're currently hiring for a number of roles, including **backend developer** and **frontend developer**.
+We're currently hiring for a number of roles, including **backend developer**, **frontend developer** and **community manager**.
 
 All these roles are full-time, permanent and based at Mixlr HQ at [Netil House](https://www.instagram.com/netilhouse/), nestled in the heart of East London. You'll be joining our small, friendly and focused team and building the world's biggest audio broadcasting service.
 
