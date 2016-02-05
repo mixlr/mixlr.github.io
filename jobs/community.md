@@ -46,7 +46,7 @@ This is a great opportunity for you to have a huge impact at a rapidly growing t
 
 * At least 3 years of community management/customer success or similar experience.
 * Exceptional verbal and written communication skills.
-* Proficient time-management and organisation skills .
+* Proficient time-management and organisation skills.
 * Good technical understanding of audio - you know your "phono" cable from your "XLR".
 * A bachelor's degree (or equivalent work experience).
 
