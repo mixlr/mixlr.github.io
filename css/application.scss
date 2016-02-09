@@ -125,6 +125,7 @@ footer.site-footer {
   }
 
   .info_block {
+    display:block;
     background:#efefef;
     padding:10px;
     margin-top:1em;
@@ -151,6 +152,10 @@ ul.post-list {
   > li {
     > h2 {
       margin:5px 0 0 0;
+    }
+
+    .info_block {
+      display:none;
     }
   }
 }

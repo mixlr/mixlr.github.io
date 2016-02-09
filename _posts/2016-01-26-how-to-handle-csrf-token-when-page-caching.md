@@ -15,8 +15,7 @@ Here at Mixlr we are accustomed to building our service to work well in high-tra
 
 One example of this is maintaining [CSRF protection](http://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf) whilst also benefitting from [page caching](http://guides.rubyonrails.org/caching_with_rails.html#page-caching). Here's how we do it.
 
-What is CSRF protection?
-------------------
+#### What is CSRF protection?
 
 CSRF protection allows us to ensure our users do not become the victims of cross-site forgery attacks.
 
@@ -34,8 +33,7 @@ CSRF protection typically avoids this by including a hidden, secret value in eve
 
 ![The form authenticity token seen in the wild](/images/token.png)
 
-What is page caching?
-----------------
+#### What is page caching?
 
 Page caching is a powerful way of increasing the scalability of your web service. It works on the premise that serving a static file - that is, a page of pre-rendered HTML markup - is likely to be profoundly faster than using a language like PHP, Ruby or Python to generate the same content.
 
@@ -43,15 +41,13 @@ It turns out that this premise is an entirely valid one - as a rule, cutting out
 
 The limitation with page caching is the obvious one. As we're short-circuiting the backend web servers, it's only good for non-dynamic content - that is, content you're prepared to be served without modification to every user, whether they're logged in or not.
 
-Why CSRF protection and page caching clash
-----------------
+#### Why CSRF protection and page caching clash
 
 Which leads us nicely onto why these two desirable technologies don't work well together.
 
 CSRF protection requires a unique-per-user token to be included in each page. But page caching makes this, at least on the surface, impossible - because dynamic content in each page cannot be achieved.
 
-Option 1: Server-side includes
--------------
+#### Option 1: Server-side includes
 
 For many years, we've [embedded Lua into the Nginx server](https://www.nginx.com/resources/wiki/modules/lua/) to help us to turbo-charge our deployments.
 
@@ -63,8 +59,7 @@ While this solution was very clever and flexible, it came with some downsides to
 
 Furthermore, as we've incrementally improved our session management and authentication code, we've observed more and more bugs which were traced back to this code. So we went looking for a different approach.
 
-Option 2: AJAX
--------------
+#### Option 2: AJAX
 
 Another option would be to not render a CSRF token in each page, but instead use JavaScript to make a background HTTP request and fetch the CSRF token after the page has loaded.
 
@@ -72,8 +67,7 @@ This would allow us to cache the main content on the page, but then trigger a ba
 
 The advantage here is that it allows us to remove the custom Nginx/Lua code, and keep this essential functionality upfront and visible in our codebase. On the downside, there will be a delay after loading the page during which the user will be unable to successfully submit any forms. And if the request to fetch the CSRF token fails for some reason, any such form submissions will fail at least until the page is reloaded.
 
-Our current solution
----------
+#### Our current solution
 
 We want to avoid as much code at the Nginx level as possible, so we've made the call to remove our implementation of Option 1.
 
@@ -93,7 +87,6 @@ In our front-end code, we simply check to see if we're missing a CSRF token - th
 
 Job done!
 
-What's next?
------
+#### What's next?
 
 We'd love to hear your feedback, or suggestions for improvements to our approach. [Drop us a line](http://mixlr.com/help/contact) and let us know what you think!
