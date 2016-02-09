@@ -22,23 +22,11 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 #### We would like to meet...
 
 * [Frontend Developer](/jobs/frontend.html) (HTML5/JavaScript/Ruby/Rails)
-* [Backend/Full-stack Developer](/jobs/rails.html) (Ruby/Rails)
+* [Backend Developer](/jobs/backend.html) (Ruby/Rails/NodeJS)
 * Junior Developer
-* Community Manager
+* [Community Manager](/jobs/community.html)
 
 ---
-
-#### Working at Mixlr offers...
-
-* A small, friendly team and a fun (but focused) working environment
-* A [fantastic office](http://eatworkart.com/netil-house/), plus [spectacular rooftop terrace and bar](https://www.instagram.com/p/8FkTZSo9M0/?taken-by=netil360) - perfectly situated in the heart of East London
-* Friday beers with technical talks to share our knowledge
-* Flexible working hours
-* A grown and battle-proven stack and infrastructure to extend and learn from
-* Fast feedback-loop: every change has a direct impact on our users
-* The opportunity to have an actual impact with the work you are doing
-* Office stereos with rotating DJs in the team
-* In-office sound effects triggered from Slack
 
 **Drop us a line at [jobs@mixlr.com](mailto:jobs@mixlr.com)**
 
