@@ -3,16 +3,36 @@
 
 $red:#ed1c24;
 $red_75:#f2555b;
+$red_85:#f03e45;
+
+$font_stack:"HelveticaNeueW01-55Roma", Arial, sans-serif;
+$font_stack_italic:"HelveticaNeueW01-56It", Arial, sans-serif;
+$font_stack_medium:"HelveticaNeueW01-65Medi", Arial, sans-serif;
+$font_stack_bold:"HelveticaNeueW01-75Bold", Arial, sans-serif;
+
+// mixins
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+// html
 
 html, body {
   height: 100%;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: $font_stack;
 }
 
 // general style overrides
 
 a, a:active, a:visited {
-  color:#f2555b;
+  color:$red_85;
   padding-bottom:1px;
 
   &:hover {
@@ -24,12 +44,16 @@ a, a:active, a:visited {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:"DIN Next W02 Medium", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-  margin-top:10px;
+  font-family:$font_stack_bold;
+  margin-top:2em;
 
   > a {
     display:inline;
   }
+}
+
+a.post-link {
+  display:inline-block;
 }
 
 // site header
@@ -45,7 +69,7 @@ header#header {
       img {
         width:100px;
         height:auto;
-        margin:11px 0px 0px 30px;
+        margin:3px 0px 0px 30px;
       }
 
       &:hover {
@@ -126,8 +150,14 @@ footer.site-footer {
 }
 
 article {
-  font-size:16px;
-  max-width:800px;
+  font-size:15px;
+  line-height:1.5em;
+  max-width:600px;
+  @include font-smoothing(on);
+
+  img {
+    margin:30px 0 30px 0;
+  }
 
   #disqus_thread {
     margin-top:40px;
@@ -139,7 +169,7 @@ article {
 ul.post-list {
   > li {
     > h2 {
-      margin:5px 0 0 0;
+      margin:5px 0 30px 0;
     }
 
     .info_block {
@@ -152,12 +182,13 @@ ul.post-list {
 
 .share {
   a, a:active, a:visited {
-    padding: 2px 10px;
+    padding: 2px 0px;
     border: 0;
     box-shadow: 0;
-    width:7em;
+    width:90px;
     text-align:center;
     display: inline-block;
+    font-family:$font_stack_medium;
     color:white;
     font-size:13px;
 

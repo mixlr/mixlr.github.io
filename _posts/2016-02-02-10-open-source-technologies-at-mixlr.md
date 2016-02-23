@@ -11,7 +11,7 @@ tags: backend technology lists
 ---
 
 <a name="top"></a>
-<p class="info_block"><strong>We're hiring.</strong> If you're a backend developer who is passionate about building rock-solid, high-usage systems using open source technology, you might find Mixlr to be a great team to join. <a href="/jobs">Visit the Mixlr jobs homepage</a>.</p>
+<p class="info_block"><strong>We're hiring.</strong> If you're a backend developer who is passionate about building rock-solid, high-availability systems using open source technology, you may find Mixlr to be a great team to join. <a href="/jobs">Visit the Mixlr jobs homepage</a>.</p>
 
 We rely on a host of amazing open source technologies to build the Mixlr platform. This post offers an overview of some of our favourite examples, and why they play such a big part in building our service.
 
