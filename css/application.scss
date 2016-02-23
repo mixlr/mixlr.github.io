@@ -1,6 +1,9 @@
 ---
 ---
 
+$red:#ed1c24;
+$red_75:#f2555b;
+
 html, body {
   height: 100%;
   font-family: Source Sans Pro, sans-serif;
@@ -33,48 +36,22 @@ h1, h2, h3, h4, h5, h6 {
 
 header#header {
   height:50px;
-  background:#000000;
+  background:$red;
 
   h1 {
-    background: url("http://mixlr-desk-assets.s3.amazonaws.com/img/mixlr_logo.png") no-repeat 19px 15px;
-    background-position: 22px 18px;
-    height: 50px;
-    width: 85px;
-    padding:0 5px 0 20px;
-    text-indent:-9999px;
     margin:0px;
-    float:left;
 
-    > a {
-      width:90px;
-      display:block;
+    a {
+      img {
+        width:100px;
+        height:auto;
+        margin:11px 0px 0px 30px;
+      }
 
       &:hover {
         border-bottom:none;
+        text-decoration:none;
       }
-    }
-
-    &:hover {
-      background-color:#333;
-    }
-  }
-
-  h2 {
-    float:left;
-    color:#fff;
-    font-family:"Avenir LT W02 55 Roman", "Helvetica Neue", Helvetica, arial, serif;
-    font-size:17px;
-    height: 50px;
-    margin: 0px;
-    padding: 17px 15px 0 10px;
-
-    a, a:active, a:hover, a:visited {
-      color:#fff;
-      border-bottom:none;
-    }
-
-    &:hover {
-      background-color:#333;
     }
   }
 }
@@ -88,6 +65,17 @@ footer.site-footer {
 
   ul.contact-list li:last-child {
     padding-top:10px;
+  }
+}
+
+// sidebar
+
+#sidebar {
+  > img {
+    width:50%;
+    height:auto;
+    display:block;
+    margin:30px auto;
   }
 }
 
