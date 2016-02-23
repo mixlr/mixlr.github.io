@@ -45,10 +45,23 @@ a, a:active, a:visited {
 
 h1, h2, h3, h4, h5, h6 {
   font-family:$font_stack_bold;
-  margin-top:2em;
 
   > a {
     display:inline;
+  }
+}
+
+h1, h2 {
+  font-family:$font_stack_bold;
+  font-weight:normal;
+}
+
+h3, h4, h5, h6 {
+  font-family:$font_stack_medium;
+  font-weight:normal;
+
+  .post &, .post-list & {
+    margin-top:2em;
   }
 }
 
