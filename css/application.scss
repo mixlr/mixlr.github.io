@@ -1,15 +1,39 @@
 ---
 ---
 
+$red:#ed1c24;
+$red_75:#f2555b;
+$red_85:#f03e45;
+$white:#ffffff;
+
+$font_stack:"HelveticaNeueW01-55Roma", Arial, sans-serif;
+$font_stack_italic:"HelveticaNeueW01-56It", Arial, sans-serif;
+$font_stack_medium:"HelveticaNeueW01-65Medi", Arial, sans-serif;
+$font_stack_bold:"HelveticaNeueW01-75Bold", Arial, sans-serif;
+
+// mixins
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+// html
+
 html, body {
   height: 100%;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: $font_stack;
 }
 
 // general style overrides
 
 a, a:active, a:visited {
-  color:#f2555b;
+  color:$red_85;
   padding-bottom:1px;
 
   &:hover {
@@ -21,60 +45,84 @@ a, a:active, a:visited {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:"DIN Next W02 Medium", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-  margin-top:10px;
-
   > a {
     display:inline;
   }
+}
+
+h1, h2 {
+  font-family:$font_stack;
+  font-weight:normal;
+}
+
+h3, h4, h5, h6 {
+  font-family:$font_stack_medium;
+  font-weight:normal;
+
+  .post &, .post-list & {
+    margin-top:30px;
+    margin-bottom:20px;
+  }
+}
+
+h5 {
+  font-size:17px;
+}
+
+h6 {
+  font-size:15px;
+}
+
+a.post-link {
+  display:inline-block;
+}
+
+.post-title {
+  line-height:1.5em;
 }
 
 // site header
 
 header#header {
   height:50px;
-  background:#000000;
+  background:$red;
+  position:relative;
 
   h1 {
-    background: url("http://mixlr-desk-assets.s3.amazonaws.com/img/mixlr_logo.png") no-repeat 19px 15px;
-    background-position: 22px 18px;
-    height: 50px;
-    width: 85px;
-    padding:0 5px 0 20px;
-    text-indent:-9999px;
     margin:0px;
-    float:left;
 
-    > a {
-      width:90px;
-      display:block;
+    a {
+      img {
+        width:100px;
+        height:auto;
+        margin:3px 0px 0px 30px;
+      }
 
       &:hover {
         border-bottom:none;
+        text-decoration:none;
       }
     }
-
-    &:hover {
-      background-color:#333;
-    }
   }
+  > a:last-child {
+    float:right;
+    display:inline-block;
+    background:$white;
+    color:$red;
+    height:20px;
+    border-radius:10px;
+    padding:0px 5px;
+    font-family:$font_stack_bold;
+    position:absolute;
+    right:30px;
+    top:15px;
 
-  h2 {
-    float:left;
-    color:#fff;
-    font-family:"Avenir LT W02 55 Roman", "Helvetica Neue", Helvetica, arial, serif;
-    font-size:17px;
-    height: 50px;
-    margin: 0px;
-    padding: 17px 15px 0 10px;
-
-    a, a:active, a:hover, a:visited {
-      color:#fff;
-      border-bottom:none;
+    @media only screen and (min-width: 400px) {
+      padding:0px 30px;
     }
 
     &:hover {
-      background-color:#333;
+      border-bottom:1px solid transparent;
     }
   }
 }
@@ -91,6 +139,46 @@ footer.site-footer {
   }
 }
 
+// sidebar
+
+#sidebar {
+  display:none !important;
+
+  @media only screen and (min-width: 880px) {
+    display:block !important;
+  }
+
+  > img {
+    width:175px;
+    height:auto;
+    display:block;
+    margin:30px auto;
+    max-width:270px;
+  }
+
+  > ul {
+    width:175px;
+    margin:30px auto 0px auto;
+    list-style-type:none;
+    font-size:18px;
+
+    li {
+      color:$red_75;
+      padding:15px 0px;
+      border-bottom:1px solid $red_75;
+      display:block;
+
+      a {
+        display:block;
+
+        &:hover {
+          border-bottom:1px solid transparent;
+        }
+      }
+    }
+  }
+}
+
 // columns
 
 .container-fluid {
@@ -102,10 +190,15 @@ footer.site-footer {
 
       @media only screen and (min-width: 767px) {
         display:block;
+        float:left !important;
       }
     }
 
     > #main {
+      @media only screen and (min-width: 767px) {
+        float:left !important;
+        width:75% !important;
+      }
 
     }
 
@@ -118,10 +211,6 @@ footer.site-footer {
 .post {
   .post-header {
     margin-bottom:15px;
-
-    h2.post-title {
-      font-size:35px;
-    }
   }
 
   .info_block {
@@ -138,8 +227,14 @@ footer.site-footer {
 }
 
 article {
-  font-size:16px;
-  max-width:800px;
+  font-size:15px;
+  line-height:1.5em;
+  max-width:600px;
+  @include font-smoothing(on);
+
+  img {
+    margin:30px 0 30px 0;
+  }
 
   #disqus_thread {
     margin-top:40px;
@@ -148,28 +243,40 @@ article {
 
 // posts (homepage list)
 
-ul.post-list {
-  > li {
-    > h2 {
-      margin:5px 0 0 0;
-    }
+ul.post-list > li > h2, .post-header h2 {
+  margin:10px 0 30px 0;
+  padding-bottom:10px;
+  border-bottom:1px solid $red;
+  max-width:600px;
+  font-size:24px;
 
-    .info_block {
-      display:none;
+  a, a:active, a:visited {
+    border-bottom:none;
+    &:hover {
+      border-bottom:1px solid transparent;
     }
   }
+}
+
+ul.post-list .info_block {
+  display:none;
+}
+
+ul.post-list article ul {
+  margin-bottom:10px;
 }
 
 // sharing
 
 .share {
   a, a:active, a:visited {
-    padding: 2px 10px;
+    padding: 2px 0px;
     border: 0;
     box-shadow: 0;
-    width:7em;
+    width:90px;
     text-align:center;
     display: inline-block;
+    font-family:$font_stack_medium;
     color:white;
     font-size:13px;
 

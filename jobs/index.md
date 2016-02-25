@@ -21,13 +21,21 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 
 #### We would like to meet...
 
+##### Engineering
+
 * [Frontend Developer](/jobs/frontend.html) (HTML5/JavaScript/Ruby/Rails)
 * [Backend Developer](/jobs/backend.html) (Ruby/Rails/NodeJS)
-* Junior Developer
+* [DevOps Engineer](/jobs/devops.html) (Linux/Puppet/AWS/Ruby)
+* Junior Developer (Ruby on Rails/HTML5/JavaScript)
+* C++ Developer
+
+##### Other roles
+
 * [Community Manager](/jobs/community.html)
+* Product Manager
 
 ---
 
-**Drop us a line at [jobs@mixlr.com](mailto:jobs@mixlr.com)**
+Drop us a line at [jobs@mixlr.com](mailto:jobs@mixlr.com)
 
 ![Netil360 roof terrace](/images/netil360.png)
