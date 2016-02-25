@@ -22,7 +22,7 @@ At Mixlr we wanted to nail the user experience for shuffling, using a high quali
 The shuffle feature was well received, and we would like to share our method for both learning and re-use; please read on for the juicy details.
 
 
-####Getting the shuffle right
+#### Getting the shuffle right
 
 Writing an algorithm to perform a shuffle, at first thought, sounds quite easy.
 A quick solution might involve selecting a random number from <span>$$1$$</span> to <span>$$N$$</span> (where <span>$$N$$</span> is the number of tracks you have loaded in your playlist) and choosing that track to play. 
@@ -35,7 +35,7 @@ This process could simply be repeated to select the next track. Sounds OK in pri
 There are algorithms available for shuffling that solve the biasing issue (e.g. the [Fisher-Yates-Knuth shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)).  
 However, we want more control over the shuffle to subjectively increase the quality of track playback order from a human perspective. 
 
-####The shuffle experience
+#### The shuffle experience
 
 Shuffling in a way that "feels right" is a challenge in and of itself; having a intuitive user experience would have to inform algorithm design.
 There were certain requirements: 
@@ -47,7 +47,7 @@ There were certain requirements:
 These requirements mean that this problem is different to shuffling a pack of cards.
 We need to assign and compute the probability of each track playing and make a random selection based on all probabilities (i.e. a type of [stochastic roulette wheel selection](http://stackoverflow.com/questions/177271/roulette-selection-in-genetic-algorithms)).
 
-####Shuffling using random sampling
+#### Shuffling using random sampling
 
 Random sampling in general is a method that is straightforward to understand and implement.
 Here are the major stages to our approach:
