@@ -29,7 +29,7 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 * Junior Developer (Ruby on Rails/HTML5/JavaScript)
 * C++ Developer
 
-##### Other roles
+##### Product & Community
 
 * [Community Manager](/jobs/community.html)
 * Product Manager
