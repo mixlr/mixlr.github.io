@@ -21,7 +21,7 @@ With tens of thousands of monthly active users, and as the main point of entry f
 
 As a C++ Developer at Mixlr, your main role will be to focus on iterating and improving on our broadcast app. Working in close collaboration with our product and design teams, you will implement new features while ensuring that the functionality and reliability of the app remains faultless.
 
-To ease the process of cross-platform development, we make use of recent versions of the [Qt framework](http://www.qt.io/). However, experience with both the GNU/LLVM and MSVC toolchains is essential.
+To ease the process of cross-platform development, we make use of recent versions of the [Qt framework](http://www.qt.io/).
 
 Experience working with audio and/or video processing or digital signal processing is an advantage, but not a prerequisite.
 
