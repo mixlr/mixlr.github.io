@@ -31,8 +31,8 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 
 ##### Product & Community
 
+* [Product Manager](/jobs/product.html)
 * [Community Manager](/jobs/community.html)
-* Product Manager
 
 ---
 
