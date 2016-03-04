@@ -6,6 +6,8 @@ author: Rob
 image: beers.png
 excerpt: Join the Mixlr team as a Community Manager and work with us to build the world's biggest audio broadcasting platform.
 categories: jobs
+redirect_from:
+  - /jobs/community.md
 comments: false
 ---
 

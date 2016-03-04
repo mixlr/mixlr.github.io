@@ -6,8 +6,6 @@ author: Rob
 excerpt: Join the Mixlr team as a Product Manager and work with us to build the world's biggest audio broadcasting platform.
 image: beers.png
 categories: jobs
-redirect_from:
-  - /jobs/community.md
 comments: false
 ---
 
