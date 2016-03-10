@@ -26,13 +26,13 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 * [Frontend Developer](/jobs/frontend.html) (HTML5/JavaScript/Ruby/Rails)
 * [Backend Developer](/jobs/backend.html) (Ruby/Rails/NodeJS)
 * [DevOps Engineer](/jobs/devops.html) (Linux/Puppet/AWS/Ruby)
+* [C++ Developer](/jobs/cpp.html) (C/C++/Qt/QML)
 * Junior Developer (Ruby on Rails/HTML5/JavaScript)
-* C++ Developer
 
-##### Other roles
+##### Product & Community
 
+* [Product Manager](/jobs/product.html)
 * [Community Manager](/jobs/community.html)
-* Product Manager
 
 ---
 

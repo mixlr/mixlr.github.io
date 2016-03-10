@@ -1,6 +1,6 @@
 # Site settings
 title: Mixlr Tech
-email: jobs@mixlr.com
+email: tech@mixlr.com
 description: > # this means to ignore newlines until "baseurl:"
   Mixlr is an audio broadcasting company based in London. On Mixlr Tech, we'll be sharing some of what we learn about technology, coding and scalability.
 baseurl: "" # the subpath of your site, e.g. /blog/

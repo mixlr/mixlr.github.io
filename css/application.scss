@@ -269,6 +269,8 @@ ul.post-list article ul {
 // sharing
 
 .share {
+  margin-top:30px;
+
   a, a:active, a:visited {
     padding: 2px 0px;
     border: 0;
@@ -279,25 +281,10 @@ ul.post-list article ul {
     font-family:$font_stack_medium;
     color:white;
     font-size:13px;
+    background:$red_75;
 
-    &.facebook {
-      background:#3B5998;
-    }
-
-    &.twitter {
-      background:#55acee;
-    }
-
-    &.gplus {
-      background:#da4a38;
-    }
-
-    &.hn {
-      background:#fe5200;
-    }
-
-    &.reddit {
-      background:#c2dcf7;
+    &:hover {
+      background:$red;
     }
   }
 }

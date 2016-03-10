@@ -30,7 +30,7 @@ We offer a friendly and positive team environment. With regular Friday beers fea
 
 {% include jobs/dev_benefits.html %}
 
-_Interested?_ [Drop us a line](mailto:jobs@mixlr.com).
+Interested? [Drop us a line](/contact).
 
 ![Mixlr Raspberry Pi](/images/beers.png)
 
