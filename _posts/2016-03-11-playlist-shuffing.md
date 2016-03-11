@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How we get the perfect shuffle for your playlist in the Mixlr app"
-date:   2016-02-09 16:54:00
+date:   2016-03-11 13:54:00
 author: Daven
 categories: development
 excerpt: A walkthrough of how playlist shuffling is performed in the Mixlr desktop app using random sampling. This technique is a universal method that can be applied to many different problem domains.
