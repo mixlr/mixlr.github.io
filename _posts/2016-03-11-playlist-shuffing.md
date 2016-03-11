@@ -52,7 +52,7 @@ We need to assign and compute the probability of each track playing and make a r
 [Random sampling](https://en.wikipedia.org/wiki/Sampling_(statistics)) is a method that is straightforward to understand and implement.
 The general idea behind random sampling to select *individuals* of a *population* using random numbers; in our case we have a population of tracks.
 Our approach differs from simple random sampling as we assign a *propensity (weighted probability)* to each track which is modified when a track is played (set to zero) but slowly increases over time.
-This form of selection requires us to record the sum of the propensity of all tracks <span>$$P_{total}$$</span> and multiply it by a random number $$r_1$$ in the range <span>$$[0.0, 1.0]$$</span> to generate a *"target propensity"* <span>$$P_{target}$$</span>.
+This form of selection requires us to record the sum of the propensity of all tracks <span>$$P_{total}$$</span> and multiply it by a random number <span>$$r_1$$</span> in the range <span>$$[0.0, 1.0]$$</span> to generate a *"target propensity"* <span>$$P_{target}$$</span>.
 Note that we recommend using the [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister) psuedo-random number generator, it has a period that far exceeds the requirements of this application yet is computationally inexpensive.
 
 <center><span>$$P_{total} = \sum_{i=1}^NP_i(T)$$</span></center>
@@ -63,8 +63,8 @@ Using <span>$$P_{target}$$</span> we can select an individual track by assessing
 
 Here are the major stages to our approach:
 
-1. Assign every track a propensity - in our case start the integer <span>$$N$$</span> (where $$N$$ is total the number of tracks).
-2. Pick a random number $$r_1$$ in the range <span>$$[0.0, 1.0]$$</span> and multiply it by the total track propensities <span>$$P_{total}$$</span> to get a "target propensity" <span>$$P_{target}$$</span>.
+1. Assign every track a propensity - in our case start the integer <span>$$N$$</span> (where <span>$$N$$<span> is total the number of tracks).
+2. Pick a random number <span>$$r_1$$</span> in the range <span>$$[0.0, 1.0]$$</span> and multiply it by the total track propensities <span>$$P_{total}$$</span> to get a "target propensity" <span>$$P_{target}$$</span>.
 3. Iterate over tracks and sum propensities until <span>$$P_{target}$$</span> is reached - select the last track <span>$$T_{\mu}$$</span> we iterated over to play.
 4. Reduce the propensity of the last track <span>$$T_{\mu}$$</span> we played - in our case we set it to <span>$$0$$</span>.
 5. Update the propensities of any other tracks that are less than <span>$$N$$</span> (i.e. ones that have been recently played) - in our case we add <span>$$1$$</span>.
