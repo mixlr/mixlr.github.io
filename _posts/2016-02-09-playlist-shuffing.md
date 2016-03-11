@@ -32,7 +32,7 @@ This process could simply be repeated to select the next track. Sounds OK in pri
 * Each track has a fixed (and biased!) probability of playback. That means there's a possibility that one track could be selected multiple times in a row.
 * There is no control over the probability - i.e. to manipulate the selection likelihood of a particular track
 
-There are algorithms available for shuffling that solve the biasing issue (e.g. the [Fisher-Yates-Knuth shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)).  
+There are algorithms available for shuffling that solve the biasing issue (e.g. the [Fisher-Yates-Knuth shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)).
 However, we want more control over the shuffle to subjectively increase the quality of track playback order from a human perspective. 
 
 #### The shuffle experience
@@ -49,13 +49,28 @@ We need to assign and compute the probability of each track playing and make a r
 
 #### Shuffling using random sampling
 
-Random sampling in general is a method that is straightforward to understand and implement.
+[Random sampling](https://en.wikipedia.org/wiki/Sampling_(statistics)) is a method that is straightforward to understand and implement.
+The general idea behind random sampling to select *individuals* of a *population* using random numbers; in our case we have a population of tracks.
+Our approach differs from simple random sampling as we assign a *propensity (weighted probability)* to each track which is modified when a track is played (set to zero) but slowly increases over time.
+This form of selection requires us to record the sum of the propensity of all tracks <span>$$P_{total}$$</span> and multiply it by a random number $$r_1$$ in the range <span>$$[0.0, 1.0]$$</span> to generate a *"target propensity"* <span>$$P_{target}$$</span>.
+Note that we recommend using the mersenne twister random number generator, it has a period far exceeds the requirements of this application yet is computationally inexpensive. 
+
+<center><span>$$P_{total} = \sum_{i=1}^NP_i(T)$$</span></center>
+
+<center><span>$$T_{\mu} = \min\left\{\mu|\sum_{j=1}^{j=\mu} a_j(x) > r_1P_{total}(x)\right\}$$</span></center>
+
+Using <span>$$P_{target}$$</span> we can select an individual track by assessing its "position" in the list of tracks propensities (by summing propensities until we hit the target).
+
+<!-- prettify this somehow, maybe convert to a python gist, what do you think rob -->
 Here are the major stages to our approach:
 
-> 1. Assign every track a probability - in our case start the integer <span>$$N$$</span> (where $$N$$ is total the number of tracks).
-> 2. Pick a random number in the range <span>$$[0.0, 1.0]$$</span> and multiply it by the sum of track probabilities to get "target probability" <span>$$P_{target}$$</span>.
-> 3. Iterate over tracks and sum probabilities until <span>$$P_{target}$$</span> is reached - select the last track we iterated over to play.
-> 4. Update the probability of the last track we played - in our case we set it to <span>$$0$$</span>.
-> 5. Update the probabilities of any other tracks that are less than <span>$$N$$</span> (i.e. ones that have been recently played) - in our case we add <span>$$1$$</span>.
-> 6. GOTO 2!
+> 1. Assign every track a propensity - in our case start the integer <span>$$N$$</span> (where $$N$$ is total the number of tracks).
+> 2. Pick a random number in the range <span>$$[0.0, 1.0]$$</span> and multiply it by the total track propensities to get a "target propensity" <span>$$P_{target}$$</span>.
+> 3. Iterate over tracks and sum propensities until <span>$$P_{target}$$</span> is reached - select the last track <span>$$T_{\mu}$$</span> we iterated over to play.
+> 4. Reduce the propensity of the last track <span>$$T_{\mu}$$</span> we played - in our case we set it to <span>$$0$$</span>.
+> 5. Update the propensities of any other tracks that are less than <span>$$N$$</span> (i.e. ones that have been recently played) - in our case we add <span>$$1$$</span>.
+> 6. Recalculate the total propensity <span>$$P_{total}$$</span> of all tracks.
+> 7. GOTO 2.
+
+This method satisfies the requirements of our shuffle experience: it provides good quality randomness, limits repetition and increases the likelihood of a previously unheard track getting airtime.
 
