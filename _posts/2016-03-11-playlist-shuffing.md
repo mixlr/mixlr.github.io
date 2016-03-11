@@ -9,7 +9,8 @@ comments: true
 tags: Monte Carlo, shuffle, shuffling, playlist, random
 ---
 
-<p class="info_block"><strong>We're hiring!</strong> Are you a developer who wants to work on interesting technical challenges with a small, passionate team here in London? We'd love to chat more: drop us a line via <a href="mailto:jobs@mixlr.com">jobs@mixlr.com</a>.</p>
+<p class="info_block"><strong>We're hiring!</strong> Are you a developer who wants to work on interesting technical challenges with a small, passionate team here in London? For more information, visit the <a href="/jobs">Mixlr jobs homepage</a>.</p>
+
 
 Playlist shuffle was a feature added to the Mixlr desktop app in 2015 after popular demand from users.
 Shuffling can be approached in different ways from a technical perspective, but is hard to get "right" from a user perspective.
