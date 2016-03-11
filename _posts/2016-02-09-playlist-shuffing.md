@@ -18,7 +18,7 @@ If you can think back to the way Winamp performed with shuffled tracks in a play
 
 ![Shuffle control in the Mixlr desktop app](/images/shuffle.png)
 
-At Mixlr we wanted to nail the user experience for shuffling, using a high quality (in terms of bias) algorithm/technique.
+At Mixlr, we wanted to nail the user experience for shuffling, using a high quality (in terms of bias) algorithm/technique.
 The shuffle feature was well received, and we would like to share our method for both learning and re-use; please read on for the juicy details.
 
 
@@ -28,7 +28,7 @@ Writing an algorithm to perform a shuffle, at first thought, sounds quite easy.
 A quick solution might involve selecting a random number from <span>$$1$$</span> to <span>$$N$$</span> (where <span>$$N$$</span> is the number of tracks you have loaded in your playlist) and choosing that track to play. 
 This process could simply be repeated to select the next track. Sounds OK in principle, but it's not actually a good solution for several reasons:
 
-* The shuffle is biased, in the worst case it could result in one track being played more than others, whilst another track rarely gets played.
+* The shuffle is biased, in the worst case it could result in one track being played more than others, whilst another track never gets played.
 * Each track has a fixed (and biased!) probability of playback. That means there's a possibility that one track could be selected multiple times in a row.
 * There is no control over the probability - i.e. to manipulate the selection likelihood of a particular track
 
@@ -42,7 +42,7 @@ There were certain requirements:
 
 * Randomness - a proper random selection rather than a playlist sort. Because it feels more authentically random if you hear a track repeated in a short period.
 * Controlling repetition - yes we want randomness, but not to the point of annoyance. It should be much less likely (but still possible) to hear the same track repeated in a short period.
-* All tracks matter - if we have <span>$$N$$</span> tracks, and <span>$$N - 1$$</span> different tracks have played, it should be much more likely to select the track <span>$$T_N$$</span> which hasn't played, rather than the previously selected track <span>$$T_{\mu}$$</span>.
+* All tracks matter - if we have <span>$$N$$</span> tracks, and <span>$$N - 1$$</span> different tracks have played, it should be much more likely to select the track <span>$$T_j$$</span> which hasn't played, rather than the previously selected track <span>$$T_{\mu}$$</span>.
 
 These requirements mean that this problem is different to shuffling a pack of cards.
 We need to assign and compute the probability of each track playing and make a random selection based on all probabilities (i.e. a type of [stochastic roulette wheel selection](http://stackoverflow.com/questions/177271/roulette-selection-in-genetic-algorithms)).
@@ -53,7 +53,7 @@ We need to assign and compute the probability of each track playing and make a r
 The general idea behind random sampling to select *individuals* of a *population* using random numbers; in our case we have a population of tracks.
 Our approach differs from simple random sampling as we assign a *propensity (weighted probability)* to each track which is modified when a track is played (set to zero) but slowly increases over time.
 This form of selection requires us to record the sum of the propensity of all tracks <span>$$P_{total}$$</span> and multiply it by a random number $$r_1$$ in the range <span>$$[0.0, 1.0]$$</span> to generate a *"target propensity"* <span>$$P_{target}$$</span>.
-Note that we recommend using the mersenne twister random number generator, it has a period far exceeds the requirements of this application yet is computationally inexpensive. 
+Note that we recommend using the [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister) psuedo-random number generator, it has a period far exceeds the requirements of this application yet is computationally inexpensive.
 
 <center><span>$$P_{total} = \sum_{i=1}^NP_i(T)$$</span></center>
 
@@ -61,7 +61,7 @@ Note that we recommend using the mersenne twister random number generator, it ha
 
 Using <span>$$P_{target}$$</span> we can select an individual track by assessing its "position" in the list of tracks propensities (by summing propensities until we hit the target).
 
-<!-- prettify this somehow, maybe convert to a python gist, what do you think rob -->
+<!-- prettify this somehow, maybe convert to a python gist (thought that might be quite big!), what do you think rob? -->
 Here are the major stages to our approach:
 
 > 1. Assign every track a propensity - in our case start the integer <span>$$N$$</span> (where $$N$$ is total the number of tracks).
