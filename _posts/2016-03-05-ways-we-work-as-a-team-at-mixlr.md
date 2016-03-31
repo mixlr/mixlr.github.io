@@ -26,7 +26,7 @@ Firstly, it ensures that everybody's first act of the day involves communicating
 
 Secondly, it's an easy way for everybody to keep track of what others are working on. If a team member is unable to proceed with their task-in-hand for some reason, then the standup helps unblocking to happen naturally.
 
-After some previous attempts, we've settled for now on a simple format that works well for us. For reasons too archaic to pin down, a generous and not entirely ironic dose of [Mick Hucknall](https://www.youtube.com/watch?v=8qc1B2PbM2g) is involved.
+After some previous attempts, we've settled for now on a simple format that works well for us. For reasons too archaic to pin down, a generous and not remotely ironic dose of [Mick Hucknall](https://www.youtube.com/watch?v=8qc1B2PbM2g) is involved.
 
 
 #### In-office sound effects
