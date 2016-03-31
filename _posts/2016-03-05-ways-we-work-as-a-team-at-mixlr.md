@@ -6,6 +6,7 @@ author: Rob
 categories: team
 excerpt: Find out about how we work as a team at Mixlr, including daily standup, Slack sounds and more.
 comments: true
+image: soundsystem1.jpg
 tags: process, agile, tools, team
 ---
 
