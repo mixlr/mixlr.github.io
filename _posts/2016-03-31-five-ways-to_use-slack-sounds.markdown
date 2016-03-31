@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Five ways to use Slack part two: How we made Campfire sounds work in Slack"
-date: 2016-03-17 18:30:00
+date: 2016-03-31 17:00:00
 author: Konrad
 excerpt: In this post we show you how Mixlr pushes Slack beyond its boundaries; how we let the genie out of the bottle--into the office and made Campfire sounds and more, work in Slack.
 categories: development
@@ -30,7 +30,7 @@ After that you need to tell Slack to which endpoint it should post the data as s
 
 ![A Slack command triggers the Slack webhook to post to our Raspberry Pi which then in turn plays a sound on our office speakers](/images/slack-sounds-diagram.png)
 
-For that we built a web server using Go which parses the different HTTP messages and translates them into Linux commands to be executed on the Raspberry Pi.
+For that we built a web server **Huck 9000** (name inspired by our patron saint Mick Hucknall) using Go which parses the different HTTP messages and translates them into Linux commands to be executed on the Raspberry Pi.
 
 ![Mixlr HQ Sounds reporting back to Slack which sound is played](/images/slack-sounds-trombone.png)
 
@@ -38,4 +38,4 @@ It is such a simple setup but if you think about it opens up so many possibiliti
 
 ![Mixlr HQ Sounds summoning everyone for daily standup](/images/slack-sounds-standup.png)
 
-Clearly, these are just simple and fun things but they enable you to think in a creative way about your workplace and even though it does not directly improve our product it heavily improves our day to day happiness and you never know when one of these hacks lead to another innovative idea as well.
+Feel free to take a look at the implementation as we have [open sourced the code](https://github.com/mixlr/huck-9000). Clearly, these are just simple and fun things but they enable you to think in a creative way about your workplace and even though it does not directly improve our product it heavily improves our day to day happiness and you never know when one of these hacks lead to another innovative idea as well.
