@@ -14,7 +14,7 @@ tags: process, agile, tools, team
 
 At Mixlr, we’ve racked up more than five years of experience working as a team to create our service.
 
-Along the way, we’ve also accumulated a few methods that help us work together effectively as a team on a day-to-day basis. Here’s some of our favourites.
+Along the way, we’ve also accumulated a few methods that help us work together effectively as a team on a day-to-day basis. Here are some of our favourites.
 
 #### Daily standup
 
