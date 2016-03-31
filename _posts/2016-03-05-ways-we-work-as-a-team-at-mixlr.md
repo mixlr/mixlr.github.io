@@ -77,4 +77,9 @@ Often, individual team members informally present what they've been working on t
 
 Sometimes, there's a more generic tech subject that somebody is interested in demonstrating. Occasionally, we end up in the pub instead. Either way, it's a great tradition that's fun, and helps to ensure our team winds down from the week effectively (and perhaps a little bit drunk).
 
+---
+
+Related: [10 open source technologies we use to build Mixlr](http://tech.mixlr.com/development/2016/02/02/10-open-source-technologies-at-mixlr.html)
+
 ![Mixlr beers](/images/beers.png)
+
