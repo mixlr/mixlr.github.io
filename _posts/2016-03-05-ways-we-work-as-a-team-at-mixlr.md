@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "5 ways we work as a team at Mixlr"
-date:   2016-03-01 14:00:00
+date:   2016-03-31 12:00:00
 author: Rob
 categories: team
 excerpt: Learn more about the methods we use to help us work effectively as a team to build the Mixlr service.
