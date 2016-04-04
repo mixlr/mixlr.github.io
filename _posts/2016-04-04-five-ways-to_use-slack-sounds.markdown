@@ -11,7 +11,7 @@ tags: software engineering, startup, slack, code quality, tests
 
 In this post we show you how Mixlr pushes Slack beyond its boundaries; how we let the genie out of the bottle--into the office. Before Mixlr got addicted to Slack we used Campfire. One of the features that made Campfire, the real-time communication tool for team collaboration, indistinguishable is the feature to play sounds to everyone. From sounds like [Danger Zone](https://emoji-cheat-sheet.campfirenow.com/sounds/dangerzone.mp3) from Topgun, over George Takei's [Oh My](https://emoji-cheat-sheet.campfirenow.com/sounds/ohmy.mp3), to Ludacris' [Roll Out](https://emoji-cheat-sheet.campfirenow.com/sounds/rollout.mp3), there is a sound to emphasise every kind of situation; be it a colleague spilling coffee over your laptop or a successful rollout of a new feature.
 
-After Mixlr migrated to Slack we found ourselves becoming more and more productive with every new integration we added. The lack of sounds though, was a wound which would not heal. We take great pride in our office stereos as it not only enables us to listen to music, share new discoveries but also use our product in a communal way. With a Raspberry Pi available in the office, this screamed out for an **office hack**!
+After Mixlr migrated to Slack we found ourselves becoming more and more productive with every new integration we added. The lack of sounds though, was a wound which would not heal. We take great pride in our office stereo as it not only enables us to listen to music, share new discoveries but also use our product in a communal way. With a Raspberry Pi available in the office, this screamed out for an **office hack**!
 
 ![Mixlr's Raspberry Pi connceted to our mix deck](/images/slack-sounds.jpg)
 
