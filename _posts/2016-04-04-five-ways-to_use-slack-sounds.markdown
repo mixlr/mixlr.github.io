@@ -5,6 +5,7 @@ date: 2016-04-04 13:00:00
 author: Konrad
 excerpt: In this post we show you how Mixlr pushes Slack beyond its boundaries; how we let the genie out of the bottle--into the office and made Campfire sounds and more, work in Slack.
 categories: development
+image: slack-sounds.jpg
 tags: software engineering, startup, slack, code quality, tests
 ---
 
