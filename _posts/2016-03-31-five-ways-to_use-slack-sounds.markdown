@@ -10,7 +10,7 @@ tags: software engineering, startup, slack, code quality, tests
 
 In this post we show you how Mixlr pushes Slack beyond its boundaries; how we let the genie out of the bottle--into the office. Before Mixlr got addicted to Slack we used Campfire. One of the features that made Campfire, the real-time communication tool for team collaboration, indistinguishable is the feature to play sounds to everyone. From sounds like [Danger Zone](https://emoji-cheat-sheet.campfirenow.com/sounds/dangerzone.mp3) from Topgun, over George Takei's [Oh My](https://emoji-cheat-sheet.campfirenow.com/sounds/ohmy.mp3), to Ludacris' [Roll Out](https://emoji-cheat-sheet.campfirenow.com/sounds/rollout.mp3), there is a sound to emphasise every kind of situation; be it a colleague spilling coffee over your laptop or a successful rollout of a new feature.
 
-After Mixlr migrated to Slack we found ourselves becoming more and more productive with every new integration we added. The lack of sounds though, was a wound which would not heal. We are taking great pride in our office stereos as it not only enables us to listen to music, share new discoveries but also use our product in a communal way. If you come across the Raspberry Pi then you are surely used to this notion which simply screams office hack!
+After Mixlr migrated to Slack we found ourselves becoming more and more productive with every new integration we added. The lack of sounds though, was a wound which would not heal. We are taking great pride in our office stereos as it not only enables us to listen to music, share new discoveries but also use our product in a communal way. If you came across the Raspberry Pi then you are surely used to this notion which simply screams office hack!
 
 ![Mixlr's Raspberry Pi connceted to our mix deck](/images/slack-sounds.jpg)
 
@@ -26,9 +26,21 @@ Slack allows you to define [outgoing webhooks](https://api.slack.com/outgoing-we
 /sound [name]
 ```
 
-After that you need to tell Slack to which endpoint it should post the data as soon as someone enters the command. Maybe you can already guess how everything fits together. We let Slack post that message directly to our Raspberry Pi which then in turn would trigger the sounds using [`mpg123`](http://www.mpg123.com/).
+After that you need to tell Slack to which endpoint it should post the data as soon as someone enters the command. Maybe you can already guess how everything fits together.
 
 ![A Slack command triggers the Slack webhook to post to our Raspberry Pi which then in turn plays a sound on our office speakers](/images/slack-sounds-diagram.png)
+
+We let Slack post that message directly to our Raspberry Pi which then in turn would trigger the sounds using [`mpg123`](http://www.mpg123.com/).
+
+
+{% highlight go %}
+path = config.SoundsDir + track + ".mp3"
+cmd := exec.Command("mpg123", path)
+go cmd.Run()
+
+message := fmt.Sprintf(":speaker: *%s* is playing _%s_, user, track)
+sendChatResponse(message, channel)
+{% endhighlight %}
 
 For that we built a web server **Huck 9000** (name inspired by our patron saint Mick Hucknall) using Go which parses the different HTTP messages and translates them into Linux commands to be executed on the Raspberry Pi.
 
