@@ -1,21 +1,21 @@
 ---
 layout: post
 title:  "5 development principles we strive for at Mixlr"
-date:   2016-04-26 12:00:00
+date:   2016-04-28 12:00:00
 author: Rob
 categories: development
-excerpt: Read about how we use an early release cycle, automated testing, and more at Mixlr.
+excerpt: Read about some of the development principles we strive to apply at Mixlr, including early release cycle, highly readable code, and more.
 comments: true
-image: soundsystem1.jpg
-tags: development, testing
+image: pi.png
+tags: development, testing, code quality, agile
 ---
 
 <a name="top"></a>
-<p class="info_block"><strong>We're hiring.</strong> If you enjoy reading this post, you'll find Mixlr is a great team to be a part of. <a href="/jobs">Visit the Mixlr jobs homepage</a>.</p>
+<p class="info_block"><strong>We're hiring.</strong> If you enjoy this post, you might enjoy being part of our team too. <a href="/jobs">Visit the Mixlr jobs homepage</a>.</p>
 
 Since we started Mixlr over five years ago, we've experimented with a lot of different approaches to development.
 
-Here's five principles that we've found particularly valuable over that time.
+Here are five principles that we've found particularly valuable over that time.
 
 #### Release early and often. (Even if it’s not perfect yet.)
 
@@ -25,11 +25,11 @@ The Mixlr community has over 45,000 monthly active broadcasters and millions of 
 
 To keep everybody satisfied, we have little choice but to aim to release features and improvements frequently, despite our small team size.
 
-We start at the product design phase, defining clear user stories at the earliest possible opportunity, and sticking with them throughout the development cycle. This helps us to focus on improvements that our users really want, and avoid wasted development time.
+We start at the product design phase, defining clear user stories at the earliest possible opportunity, and then stick with them throughout the development cycle. This helps us to focus on improvements that our users really want, and avoid wasted development time.
 
 When it comes to release, we always favour pushing new code as early as possible.
 
-This doesn't mean that allowing a user’s experience to regress acceptable, of course. We make careful use of tools like Google Analytics, [Mixpanel](http://www.mixpanel.com), Browserstack and [Airbrake](http://www.airbrake.io) to be sure that won't happen.
+This doesn't mean that allowing a user’s experience to regress is acceptable, of course. We make careful use of tools like Google Analytics, [Mixpanel](http://www.mixpanel.com), Browserstack and [Airbrake](http://www.airbrake.io) to be sure that won't happen.
 
 But with these safeguards in place, we can allow our community to benefit from new features quickly --- even if they're not quite pixel perfect yet.
 
@@ -50,6 +50,18 @@ When writing Ruby, is that early return statement triggered by a [dangling condi
 Can that variable _really_ not be named a little more descriptively?
 
 These are questions we try to ask of every commit, because if we can create code that’s easy to read, then we’ve probably built something that’s easy to maintain too. And everybody, including our users, benefits from that in the long-run.
+
+#### Keep the code visible.
+
+As [Linus's Law states](http://www.exceptionnotfound.net/fundamental-laws-of-software-development/), enough eyeballs make all bugs shallow.
+
+We try to learn from this at Mixlr in a couple of ways.
+
+Firstly, by encouraging our team to review each other's code on an adhoc basis. Once again, [Slack is a great tool here](http://konrad-reiche.com/2015/12/26/continuous-code-review-with-github-and-slack.html), integrating closely with Github to make the code we commit visible to everybody within seconds.
+
+And secondly, by enabling more formal code reviews and [pair programming](http://guide.agilealliance.org/guide/pairing.html) opportunities whenever possible.
+
+Apart from directly increasing overall code quality, this also all has the advantage of exposing more of our backend infrastructure to our team, which is a great learning opportunity too.
 
 #### If it moves, test it.
 
@@ -74,5 +86,7 @@ We use [Matt Brictson’s Airbrussh gem](https://github.com/mattbrictson/airbrus
 Our internal staging site provides us an ideal environment for testing and otherwise experimenting with the deploy process, and tight integration with Slack means that our team always knows who is deploying what to where.
 
 All of this means that our entire team is comfortable with deploying to production (often from their very first day with us), so we can fix bugs quicker and deploy new features more readily than we would otherwise be able to.
+
+Read more: [How to deploy software](https://zachholman.com/posts/deploying-software)
 
 
