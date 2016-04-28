@@ -13,6 +13,10 @@ tags: development, testing
 <a name="top"></a>
 <p class="info_block"><strong>We're hiring.</strong> If you enjoy reading this post, you'll find Mixlr is a great team to be a part of. <a href="/jobs">Visit the Mixlr jobs homepage</a>.</p>
 
+Since we started Mixlr over five years ago, we've experimented with a lot of different approaches to development.
+
+Here's five principles that we've found particularly valuable over that time.
+
 #### Release early and often. (Even if it’s not perfect yet.)
 
 This is the first rule of the [Agile manifesto](http://agilemanifesto.org/principles.html), but arguably the most important - and even more so when you’ve got a small team, and a big user base.
