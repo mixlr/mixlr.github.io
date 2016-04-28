@@ -17,15 +17,19 @@ tags: development, testing
 
 This is the first rule of the [Agile manifesto](http://agilemanifesto.org/principles.html), but arguably the most important - and even more so when you’ve got a small team, and a big user base.
 
-The Mixlr community has over 45,000 monthly active broadcasters and millions of monthly listeners. To keep everybody satisfied, we have little choice but to aim to release features and improvements frequently, despite our small team size.
+The Mixlr community has over 45,000 monthly active broadcasters and millions of monthly listeners.
 
-There’s no simple way to achieve this: it requires persistence, careful adjustments to numerous parts of the development process, backed up by a zest for deploying early that should ideally be bordering on fanatiscism.
+To keep everybody satisfied, we have little choice but to aim to release features and improvements frequently, despite our small team size.
 
 We start at the product design phase, defining clear user stories at the earliest possible opportunity, and sticking with them throughout the development cycle. This helps us to focus on improvements that our users really want, and avoid wasted development time.
 
-When it comes to release, we always favour pushing new code as early as possible. As long as it doesn’t cause a user’s experience to regress, it’s better to have our community benefit from new functionality as soon as possible --- even when it’s not quite pixel perfect.
+When it comes to release, we always favour pushing new code as early as possible.
 
-That means we often deploy to production before we’ve dealt with every edge case in a new feature. There is always a trade-off between completeness and rapid deployment, but we embrace this philosophy as offering a valuable opportunity to listen to, and learn from, our users.
+This doesn't mean that allowing a user’s experience to regress acceptable, of course. We make careful use of tools like Google Analytics, [Mixpanel](http://www.mixpanel.com), Browserstack and [Airbrake](http://www.airbrake.io) to be sure that won't happen.
+
+But with these safeguards in place, we can allow our community to benefit from new features quickly --- even if they're not quite pixel perfect yet.
+
+And with early release comes early dialog too, which helps us finetune and improve a feature more efficiently than we ever could in a closed QA environment.
 
 #### Readability counts.
 
