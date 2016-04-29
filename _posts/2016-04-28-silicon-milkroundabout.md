@@ -6,7 +6,7 @@ author: Rob
 categories: hiring
 excerpt: Mixlr will be at Silicon Milkroundabout on May 7th to 8th.
 comments: true
-image: beers.png
+image: smr2.jpg
 tags: silicon milkroundabout, london, hiring, jobs
 ---
 
