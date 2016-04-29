@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Silicon Milkroundabout is coming!"
-date:   2016-04-29 12:00:00
+date:   2016-04-29 11:00:00
 author: Rob
 categories: hiring
 excerpt: Mixlr will be at Silicon Milkroundabout on May 7th to 8th.
