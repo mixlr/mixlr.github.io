@@ -29,7 +29,7 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 
 No opportunities in Product & Community at this time.
 
-(Last updated: May 2016)
+(Last updated: October 2016)
 
 ---
 
