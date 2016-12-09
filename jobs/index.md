@@ -23,7 +23,7 @@ Right now, we’re hiring for a number of roles - technical, product, sales and 
 
 ##### Engineering
 
-* [C++ engineer](/jobs/cpp.html) (C++/C/Qt/QML/Audio)
+No opportunities in Engineering at this time.
 
 ##### Product & Community
 
