@@ -15,21 +15,20 @@ We are passionate about beautiful design, compelling products and exciting techn
 
 With thousands of paying customers, we are growing fast. And our large and active community provides instant feedback on the changes we make - something in which we revel. Working on Mixlr is fast, fun, exhilarating and unrelenting.
 
-Right now, we’re hiring for a number of roles - technical, product, sales and community support. We are a small, friendly and positive team which delights in exceeding expectations and learning, and having fun, together. Together we can build something great.
+Right now, we’re hiring for a number of roles - technical, product and  marketing. We are a small, friendly and positive team which delights in exceeding expectations and learning, and having fun, together. Together we can build something great.
 
 ---
 
 #### We would like to meet...
 
 ##### Engineering
+QT / C++ Developer
+Ruby Developer (frontend)
+Ruby Developer (backend)
 
-No opportunities in Engineering at this time.
-
-##### Product & Community
-
-No opportunities in Product & Community at this time.
-
-(Last updated: October 2016)
+##### Product & Marketing
+Product Manager
+Marketing Manager
 
 ---
 
