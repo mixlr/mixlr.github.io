@@ -23,11 +23,14 @@ Right now, we’re hiring for a number of roles - technical, product and  market
 
 ##### Engineering
 QT / C++ Developer
+
 Ruby Developer (frontend)
+
 Ruby Developer (backend)
 
 ##### Product & Marketing
 Product Manager
+
 Marketing Manager
 
 ---
