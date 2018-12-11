@@ -11,7 +11,7 @@ sharing_upper: false
 tags: jobs
 ---
 
-We're currently hiring for a number of roles, including:
+We're currently hiring for a number of roles, including but not limited to:
 
 * Backend Developer
 * Frontend Developer
