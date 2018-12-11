@@ -19,7 +19,8 @@ If you can think back to the way Winamp performed with shuffled tracks in a play
 
 ![Shuffle control in the Mixlr desktop app](/images/shuffle.png)
 
-At Mixlr, we wanted to nail the user experience for shuffling, using a high quality (in terms of bias) algorithm/technique.
+At Mixlr, we wanted to nail the user experience for shuffling, using a high quality (in terms of bias) algorithm/t
+chnique.
 The shuffle feature was well received, and we would like to share our method for both learning and re-use; please read on for the juicy details.
 
 
