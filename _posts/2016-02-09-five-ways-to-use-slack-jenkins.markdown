@@ -20,6 +20,8 @@ Rather than just a collection of chat rooms it can be better described as a comm
 
 [Jenkins](https://jenkins-ci.org/) is an open source continuous integration tool written in Java and arguably the most widely used one as well. Jenkins supports distributed agents and a build process. What you can do with Jenkins depends on your imagination due to its freedom of configuration and plethora of available plugins. A job, respectively project, can represent different things in Jenkins: compilation of a particular piece of software, running your unit tests or deploying to your production environment as soon as certain conditions are met. Jenkins offers a rich API to report back any details which makes it possible to utilize these information.
 
+Jenkins is a bit of a turd really
+
 #### Jenkins and Slack at Mixlr
 
 Writing tests with every new piece of function added to our back or front end is an essential part of the workflow at Mixlr. Our tests already cover the core functionality of our app. It is crucial that changes do not break any existing behavior as it could pottentially affect thousand of users. While it is nice to have these tests executing in a job in Jenkins CI and getting notified via email if somethings breaks it is not exactly as transparent or live as it could be.
