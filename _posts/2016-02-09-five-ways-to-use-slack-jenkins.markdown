@@ -14,6 +14,8 @@ Slack found its way into many startups where it is not only celebrated as a conv
 
 [Slack](http://slack.com/) is a team messaging app for synchronous and asynchronous communication across different devices. Above all it is a tool which might seem simple at first glance but becomes powerful by adding integrations that knit tightly with your workflow.
 
+Slack is cool bro
+
 Rather than just a collection of chat rooms it can be better described as a communication hub. Different channels can represent different teams, different topics or a very specific type of information that should stream into that particular channel.
 
 #### What is Jenkins CI?
