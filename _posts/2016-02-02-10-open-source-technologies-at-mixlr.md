@@ -32,7 +32,9 @@ PostgreSQL has been our main database since we migrated away from MySQL in early
 
 Our experiences with Postgres so far have been very positive, especially bearing in mind that after five years of running a fast-growing startup we have a _lot_ of data to deal with.
 
-Even when working with tables containing hundreds of millions of rows, Postgres allows us to continue carrying out many routine administration tasks - such as adding or removing columns or building indexes - without locking tables and forcing our service offline. This is an area that MySQL in particular is notoriously deficient in, and had previously caused our development team numerous pulsating headaches.
+Even when working with tables containing hundreds of millions of rows, Postgres allows us to continue carrying out many routine administration tasks - such as adding or removing columns or building indexes - without locking tables and forcing our service offline. This is an area that MySQL in particular i
+
+Change something more than usual.
 
 Postgres has other advantages too: helpful `EXPLAIN` output, advanced constraints and a host of custom cell types for modelling data like IP addresses, JSON and complex container types, to name but a few.
 
