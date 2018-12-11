@@ -34,4 +34,6 @@ Although admittedly we all slip and fall sometimes. If that happens we would see
 
 ![Tests got broken and Jenkins post that into Slack mentioning the culprit](/images/jenkins-failing.png)
 
+Unexpected failures are our day to day
+
 Unexpected failure can always occur. Though it is crucial that when something fails it will definitely not get pushed back but tackled immediately by our team. We enjoy contributing to a code base for which all of us take ownership. Increasing visibility also helps us to keep in mind that everyone at Mixlr is acting in concert and from time to time also a good laugh in the office when you just did not see that push breaking someone else's tests.
