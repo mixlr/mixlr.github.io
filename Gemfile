@@ -7,6 +7,7 @@ group :test do
   gem "rspec"
   gem "capybara"
   gem "rack-jekyll"
+  gem "selenium-webdriver"
 end
 
 group :development do
