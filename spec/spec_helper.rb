@@ -22,8 +22,9 @@ RSpec.configure do |config|
 
     Capybara::Selenium::Driver.new(
       app,
-      browser: :chrome,
-      desired_capabilities: capabilities
+      browser: :remote,
+      desired_capabilities: capabilities,
+      url: "http://selenium-chrome:4444/wd/hub"
     )
   end
 

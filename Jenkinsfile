@@ -73,11 +73,13 @@ pipeline {
       steps {
         sh "docker run -d \
           --name ${env.SELENIUM_NAME} \
+          --net bridge \
           -p 4444:4444 \
           -v /dev/shm:/dev/shm \
           ${env.SELENIUM_IMAGE}"
 
         sh "docker run --rm \
+          --net bridge \
           --link ${env.SELENIUM_NAME}:hub \
           -v /dev/shm:/dev/shm \
           -v ${WORKSPACE}:/var/www/blog \
