@@ -65,22 +65,36 @@ pipeline {
     }
 
     stage('Test') {
+      environment {
+        SELENIUM_NAME  = "selenium-chrome"
+        SELENIUM_IMAGE = "selenium/standalone-chrome:3.4.0"
+      }
+
       steps {
-        sh "docker run --name selenium-chrome-standalone -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.4.0"
-        sh "docker run -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} rspec"
+        sh "docker run -d \
+          --name ${env.SELENIUM_NAME} \
+          -p 4444:4444 \
+          -v /dev/shm:/dev/shm \
+          ${env.SELENIUM_IMAGE}"
+
+        sh "docker run --rm \
+          --link ${env.SELENIUM_NAME}:hub \
+          -v /dev/shm:/dev/shm \
+          -v ${WORKSPACE}:/var/www/blog \
+          ${env.IMAGE} rspec"
       }
 
       post {
         always {
-          sh "docker kill selenium-chrome-standalone"
-          sh "docker rm selenium-chrome-standalone"
+          sh "docker kill ${env.SELENIUM_NAME}"
+          sh "docker rm ${env.SELENIUM_NAME}"
         }
       }
     }
 
     stage('Check') {
       steps {
-        sh "docker run -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} jekyll doctor"
+        sh "docker run --rm -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} jekyll doctor"
       }
     }
 
