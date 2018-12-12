@@ -64,9 +64,17 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      steps {
-        sh "docker run -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} rspec"
+    parallel {
+      stage('Test') {
+        steps {
+          sh "docker run -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} rspec"
+        }
+      }
+
+      stage('Check') {
+        steps {
+          sh "docker run -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} jekyll doctor"
+        }
       }
     }
 
