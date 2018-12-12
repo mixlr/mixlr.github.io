@@ -66,7 +66,15 @@ pipeline {
 
     stage('Test') {
       steps {
+        sh "docker run --name selenium-chrome-standalone -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.4.0"
         sh "docker run -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} rspec"
+      }
+
+      post {
+        always {
+          sh "docker kill selenium-chrome-standalone"
+          sh "docker rm selenium-chrome-standalone"
+        }
       }
     }
 

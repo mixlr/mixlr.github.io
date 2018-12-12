@@ -1,9 +1,9 @@
 # Require all of the necessary gems
-require 'rspec'
-require 'capybara/rspec'
-require 'rack/jekyll'
-require 'rack/test'
-require 'pry'
+require "rspec"
+require "capybara/rspec"
+require "rack/jekyll"
+require "rack/test"
+require "pry"
 require "selenium/webdriver"
 
 RSpec.configure do |config|
