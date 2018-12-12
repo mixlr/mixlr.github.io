@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reflecting on how we've evolved our ways of working as a team"
+title:  "Reflecting back on how we've evolved our ways of working as a team"
 date:   2018-12-12 12:00:00
 author: Erika
 categories: team
