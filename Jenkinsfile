@@ -48,10 +48,18 @@ pipeline {
   }
 
   stages {
+    stage('Clone') {
+      steps {
+        step([$class: 'WsCleanup'])
+        checkout scm
+      }
+    }
+
     stage('Build') {
       steps {
         notifySlack('started')
         sh "docker build -t ${env.IMAGE} ."
+        sh "docker run -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} jekyll clean"
         sh "docker run -v ${WORKSPACE}:/var/www/blog --rm ${env.IMAGE} jekyll build"
       }
     }
