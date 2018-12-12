@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "5 ways we work as a team at Mixlr"
-date:   2016-03-31 12:00:00
-author: Rob
+title:  "Reflecting on how we've evolved our ways of working as a team"
+date:   2018-12-12 12:00:00
+author: Erika
 categories: team
-excerpt: Find out about how we work as a team at Mixlr, including daily standup, Slack sounds and more.
+excerpt: Find out about how we've updated our favourite methods of working together effectively.
 comments: true
 image: soundsystem1.jpg
 tags: process, agile, tools, team
@@ -13,15 +13,22 @@ tags: process, agile, tools, team
 <a name="top"></a>
 <p class="info_block"><strong>We're hiring.</strong> If you enjoy reading this post, you'll find Mixlr is a great team to be a part of. <a href="/jobs">Visit the Mixlr jobs homepage</a>.</p>
 
-At Mixlr, we’ve racked up more than five years of experience working as a team to create our service.
 
-Along the way, we’ve also accumulated a few methods that help us work together effectively as a team on a day-to-day basis. Here are some of our favourites.
+It's been a couple of years since our post on the <a href="http://tech.mixlr.com/team/2016/03/31/ways-we-work-as-a-team-at-mixlr.html">5 ways we work as a team at Mixlr.</a>
+
+The tides have changed, and how do our tried and tested methods stand up to the changes? 
+
+As it turns out, we had moved as fluidly as the tides, yet stayed anchored to the essence of what made those methods our favourite ways of working. 
+
+In other words, the ways we worked together had transformed alongside an evolving team, an exploration of a new direction, whilst set in a world on the tether hooks of fast-moving tech. 
+
+It came rather naturally, with each new team member bringing a new perspective, fresh ideas and personal tweaks to some of the ways we collaborated.  We made it work for us, and we made it work for the changing times. 
+
+
 
 #### Daily standup
 
-A standup is one of the [most commonly known](http://martinfowler.com/articles/itsNotJustStandingUp.html) agile methodologies. Everybody in the team comes together for a few minutes, to recap what they worked on yesterday, and what they're planning to work on today.
-
-We find it's a great start to the day for a few reasons.
+We still find it a great way to start the day, for the very same reasons as before. 
 
 Firstly, it ensures that everybody's first act of the day involves communicating with the whole group, which we find helps get the day off to a positive start.
 
