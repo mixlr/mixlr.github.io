@@ -12,3 +12,5 @@ github_username:  mixlr
 markdown: kramdown
 gems:
   - jekyll-redirect-from
+exclude:
+  - Dockerfile
