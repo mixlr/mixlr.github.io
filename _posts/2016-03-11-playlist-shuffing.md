@@ -13,13 +13,14 @@ tags: Monte Carlo, shuffle, shuffling, playlist, random
 
 
 Playlist shuffle was a feature added to the Mixlr desktop app in 2015 after popular demand from users.
-Shuffling can be approached in different ways from a technical perspective, but is hard to get "right" from a user perspective.
+Shuffling can be approached in different ways from a technical point of view, but is hard to get "right" from a user perspective.
 Youtube solves the problem by randomly sorting the playlist, which may be fine for a youtube listener playlist, but a Mixlr broadcaster probably wouldn't want their lists being randomly rearranged.
 If you can think back to the way Winamp performed with shuffled tracks in a playlist, you may have had an experience where one of your [favourite tracks never seemed to play](https://thetfp.com/tfp/tilted-technology/60783-how-does-winamps-shuffle-work.html).
 
 ![Shuffle control in the Mixlr desktop app](/images/shuffle.png)
 
-At Mixlr, we wanted to nail the user experience for shuffling, using a high quality (in terms of bias) algorithm/technique.
+At Mixlr, we wanted to nail the user experience for shuffling, using a high quality (in terms of bias) algorithm/t
+chnique.
 The shuffle feature was well received, and we would like to share our method for both learning and re-use; please read on for the juicy details.
 
 
